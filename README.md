@@ -9,3 +9,12 @@ Http server from scratch
 * capa de sesión
 * capa de presentación
 * capa de aplicación
+
+# TCP/IP
+# Sockets
+# HTTP/1.1
+# Web browser
+# Web server
+# HTTP Methods: GET, POST, DELETE, PUT
+# RFC
+# Internet
