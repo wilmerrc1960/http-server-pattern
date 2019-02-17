@@ -29,6 +29,8 @@ Implementing TCP:
 First we need to implement the Transport Layer of HTTP which is TCP.
 To implement TCP, we have to learn TCP socket programming.
 
+# HTTP Request Proccess
+![alt text](http://www.aosabook.org/en/500L/web-server-images/http-cycle.png)
 
 ![alt text](https://cdn-images-1.medium.com/max/1000/1*JSnJtHpU7cWUnWIgGupu7w.png)
 
