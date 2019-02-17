@@ -34,6 +34,8 @@ To implement TCP, we have to learn TCP socket programming.
 
 ![alt text](https://cdn-images-1.medium.com/max/1000/1*JSnJtHpU7cWUnWIgGupu7w.png)
 
+![alt text](https://ruslanspivak.com/lsbaws-part1/LSBAWS_HTTP_response_anatomy.png)
+
 # HTTP Request Structure
 
 ![alt text](https://cdn-images-1.medium.com/max/1000/1*Yqq-60D9mD4NVuhFd4IoFg.png)
