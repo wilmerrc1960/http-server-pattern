@@ -18,3 +18,5 @@ Http server from scratch
 # HTTP Methods: GET, POST, DELETE, PUT
 # RFC
 # Internet
+
+![alt text](https://cdn-images-1.medium.com/max/1000/1*JSnJtHpU7cWUnWIgGupu7w.png)
