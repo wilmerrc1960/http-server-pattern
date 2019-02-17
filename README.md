@@ -39,6 +39,43 @@ To implement TCP, we have to learn TCP socket programming.
 ![alt text](https://cdn-images-1.medium.com/max/1000/1*Yqq-60D9mD4NVuhFd4IoFg.png)
 
 # Examples
+- The "hello world" example using Python http server:
+1. Wait for someone to connect to our server and send an HTTP request;
+2. parse that request;
+3. figure out what it's asking for;
+4. fetch that data (or generate it dynamically);
+5. format the data as HTML; and
+6. send it back.
+Steps 1, 2, and 6 are the same from one application to another, so the Python standard library has a module called BaseHTTPServer that does those for us. We just have to take care of steps 3-5, which we do in the little program below:
+import BaseHTTPServer
+```
+class RequestHandler(BaseHTTPServer.BaseHTTPRequestHandler):
+    '''Handle HTTP requests by returning a fixed 'page'.'''
+
+    # Page to send back.
+    Page = '''\
+<html>
+<body>
+<p>Hello, web!</p>
+</body>
+</html>
+'''
+
+    # Handle a GET request.
+    def do_GET(self):
+        self.send_response(200)
+        self.send_header("Content-Type", "text/html")
+        self.send_header("Content-Length", str(len(self.Page)))
+        self.end_headers()
+        self.wfile.write(self.Page)
+
+#----------------------------------------------------------------------
+
+if __name__ == '__main__':
+    serverAddress = ('', 8080)
+    server = BaseHTTPServer.HTTPServer(serverAddress, RequestHandler)
+    server.serve_forever()
+```    
 
 - The "hello world" example using Node's http server:
 ```
