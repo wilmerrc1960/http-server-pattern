@@ -47,8 +47,10 @@ To implement TCP, we have to learn TCP socket programming.
 5. format the data as HTML; and
 6. send it back.
 Steps 1, 2, and 6 are the same from one application to another, so the Python standard library has a module called BaseHTTPServer that does those for us. We just have to take care of steps 3-5, which we do in the little program below:
-import BaseHTTPServer
+
 ```
+import BaseHTTPServer
+
 class RequestHandler(BaseHTTPServer.BaseHTTPRequestHandler):
     '''Handle HTTP requests by returning a fixed 'page'.'''
 
