@@ -1,6 +1,32 @@
 # http-server-pattern
 Http server from scratch
 
+Cuando se realiza una petición por HTTP (http request) por un navegador o cualquier software capaz de hacer peticiones http:
+1. Se necesita establecer una conexión TCP (por medio de sockets entre el cliente y el server)
+  - create socket
+  - bind
+  - listen
+  - accept
+  - connected socket
+  
+  The Web server creates a listening socket and starts accepting new connections in a loop. 
+ 
+ 2. The client sends HTTP Request to the server =>
+  GET    /hello   HTTP/1.1
+  Http     Path   HTTP Version
+  Method
+  
+ 3. The server reads the request line
+   - prints "Hello World"
+   - return the proper HTTP response to the client:
+     HTTP/1.1  200   OK (HTTP version, HTTP status code, HTTP status code reason) 
+	 Hello, World!  (HTTP response body displays on your browser)
+
+To sum it up: The Web server creates a listening socket and starts accepting new connections in a loop. 
+The client initiates a TCP connection and, after successfully establishing it, 
+the client sends an HTTP request to the server and the server responds with an HTTP response that gets displayed to the user.
+To establish a TCP connection both clients and servers use sockets.
+
 # Key Words for implement a Http Server
 
 * **modelo OSI**
