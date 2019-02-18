@@ -8,15 +8,13 @@ Cuando se realiza una petición por HTTP (http request) por un navegador o cualq
   - listen
   - accept
   - connected socket
-  
   The Web server creates a listening socket and starts accepting new connections in a loop. 
  
  2. The client sends HTTP Request to the server =>
   GET    /hello   HTTP/1.1
-  Http     Path   HTTP Version
-  Method
-  
- 3. The server reads the request line
+  (Http method,   Path,  HTTP Version)
+ 
+ 3. The server reads the request line =>
    - prints "Hello World"
    - return the proper HTTP response to the client:
      HTTP/1.1  200   OK (HTTP version, HTTP status code, HTTP status code reason) 
