@@ -41,7 +41,7 @@ To establish a TCP connection both clients and servers use sockets.
 * **Web browser**
 * **Web server**
 * **HTTP Methods: GET, POST, DELETE, PUT**
-* **RFC**
+* **RFC** => Request for Comments defined by Internet Engineering Task Force (IETF)  
 * **Internet**
 
 
