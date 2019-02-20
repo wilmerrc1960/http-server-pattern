@@ -27,7 +27,7 @@ To establish a TCP connection both clients and servers use sockets.
 # Objetivo
 Construir servidor HTTP desde cero siguiendo las recomendaciones del RFC donde se define el protocolo HTTP /1.1, con la implementación de sockets y teniendo en cuenta las estructuras definidas para el cuerpo del mensaje enviado por el cliente (user agent) y la respuesta del server (origin server).
 
-![alt text](https://goo.gl/images/LCFpCt)
+![alt text](https://cdn-images-1.medium.com/max/1600/1*3YxzwVR_f_nluz9yIdrMWA.png)
 
 # Key Words for implement a Http Server
 
