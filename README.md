@@ -123,5 +123,10 @@ server.listen(3000);
 | Descripción del Problema | Debido a la necesidad que se tiene de realizar la construcción del servidor, se debe considerar en que lenguaje de programación se debe realizar esta construcción.  |
 | Alternativas | Realizar la implementación del servidor en los siguientes lenguajes ( C#, C, Python, Java,Node.js)|
 | Decisión | Se considera la opción de realizar la implementación de este servidor en los lenguaje de Python o Node.js ya que los integrantes de este grupo, tienen conocimiento sobre estos  lenguajes, sin embargo aun no se define en cual de los dos será el escogido ya que se realizaran pruebas de concepto para la definición del lenguaje a utilizar. |
-| Implicaciones | Por evaluar |
-| Arquitectura  | Cliente - Servidor (Stateless) |
+| Implicaciones | Usar libreria de sockets en python |
+| Lenguaje      | Python      |
+| Arquitectura  | Cliente - Servidor (Stateless) Falta definir estrategia de la solución y representación con diagramas de clases o flujo |
+
+# Referencias
+RFC HTTP/1.1,  https://tools.ietf.org/html/rfc7230
+
