@@ -17,7 +17,7 @@ Las unicas librerias usadas para la implementación fueron socket, mimetypes, lo
 ![alt text](https://qanalysisblog.files.wordpress.com/2018/06/bdd_pic1.png?w=775)
 
 // Primera Revisión
-* Se implemento inicialmente un servidor HTTP que atendiera conexiones full duplex con sockets 
+* Se implemento inicialmente un servidor TCP que atendiera conexiones full duplex con sockets entre el userAgent y el server.
 
 // Segunda Revisión
 * Posterior se desarrolla el parseador de los datos recibidos en el socket
@@ -40,6 +40,25 @@ Las unicas librerias usadas para la implementación fueron socket, mimetypes, lo
 * Cucumber para pruebas de integración y comportamiento
 * RestAssured para pruebas del servicio HTTPServer
 
+# Instrucciones de uso:
+
+1. Instalar Python 3: https://www.python.org/downloads/
+2. Instalar JDK Java: https://www.oracle.com/technetwork/es/java/javase/downloads/index.html
+3. Instalar IDE Visual Studio Code
+4. Instalar Eclipse o Intellij
+5. Instalar Git
+6. Clonar repositorio: https://github.com/edtiko/http-server-pattern.git
+7. Abrir consola e ir a la raíz del proyecto /http-server
+8. Ejecutar comando para iniciar el servidor: py main.py
+9. En la consola debe aparecer "Listening socket on 127.0.0.0:8888"
+10. Abrir navegador o Postman para poder realizar peticiones como:
+ - HTTP 1.1 GET 127.0.0.0:8888/index.html
+11. Para ejecutar el proyecto de pruebas es necesario realizar lo siguiente:
+ - En el mismo repositorio se encuentra el proyecto /http-server-test
+ - Importar como proyecto Maven en Eclipse
+ - Ejecutar clase CucumberTest.java
+ - Ver resultado de los pasos definidos cómo escenarios 
+ - Ejecutar HttpServerTest.java con Junit para validar respuesta del servicio (httpServer)
 
 # Pruebas:
 Se implementó un proyecto de pruebas en Java con Cucumber para cubrir los comportamientos esperados del servidor HTTP desarrollado, los escenarios planteados son:
@@ -61,27 +80,6 @@ Se implementó un proyecto de pruebas en Java con Cucumber para cubrir los compo
 * Cuando el userAgent realice una petición POST al servidor http 
 * Entonces el servidor debe responder código 501
 * y con el body de error
-
-# Instrucciones de uso:
-
-1. Instalar Python 3: https://www.python.org/downloads/
-2. Instalar JDK Java: https://www.oracle.com/technetwork/es/java/javase/downloads/index.html
-3. Instalar IDE Visual Studio Code
-4. Instalar Eclipse o Intellij
-5. Instalar Git
-6. Clonar repositorio: https://github.com/edtiko/http-server-pattern.git
-7. Abrir consola e ir a la raíz del proyecto /http-server
-8. Ejecutar comando para iniciar el servidor: py main.py
-9. En la consola debe aparecer "Listening socket on 127.0.0.0:8888"
-10. Abrir navegador o Postman para poder realizar peticiones como:
- - HTTP 1.1 GET 127.0.0.0:8888/index.html
-11. Para ejecutar el proyecto de pruebas es necesario realizar lo siguiente:
- - En el mismo repositorio se encuentra el proyecto /http-server-test
- - Importar como proyecto Maven en Eclipse
- - Ejecutar clase CucumberTest.java
- - Ver resultado de los pasos definidos cómo escenarios 
- - Ejecutar HttpServerTest.java con Junit para validar respuesta del servicio (httpServer)
-    
 
 # Decisiones de realización
 
