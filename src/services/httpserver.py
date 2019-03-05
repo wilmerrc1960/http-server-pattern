@@ -80,7 +80,7 @@ class HTTPServer(TCPServer):
     def handle_GET(self, request):
         filename = request.uri.strip('/') # remove the slash from URI
 
-        if os.path.exists('views/'+filename):
+        if filename is not None and os.path.exists('views/'+filename):
             response_line = self.response_line(200)
 
              # find out a file's MIME type
