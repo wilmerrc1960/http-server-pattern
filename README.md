@@ -21,6 +21,9 @@ La metodología usada para el desarrollo del servidor HTTP es BDD (Behavior Driv
 * Visual Studio Code para realizar la implementación en Python.
 * Eclipse para realizar el proyecto de pruebas usando Cucumber como dependencia.
 * Git para el control de versiones de los dos proyectos.
+* Junit para pruebas unitarias
+* Cucumber para pruebas de integración y comportamiento
+* RestAssured para pruebas del servicio HTTPServer
 
 
 # Pruebas:
@@ -51,7 +54,19 @@ Se implementó un proyecto de pruebas en Java con Cucumber para cubrir los compo
 3. Instalar IDE Visual Studio Code
 4. Instalar Eclipse o Intellij
 5. Instalar Git
-6. Clonar repositorio: 
+6. Clonar repositorio: https://github.com/edtiko/http-server-pattern.git
+7. Abrir consola e ir a la raíz del proyecto /http-server
+8. Ejecutar comando para iniciar el servidor: py main.py
+9. En la consola debe aparecer "Listening socket on 127.0.0.0:8888"
+10. Abrir navegador o Postman para poder realizar peticiones como:
+ - HTTP 1.1 GET 127.0.0.0:8888/index.html
+11. Para ejecutar el proyecto de pruebas es necesario realizar lo siguiente:
+ - En el mismo repositorio se encuentra el proyecto /http-server-test
+ - Importar como proyecto Maven en Eclipse
+ - Ejecutar clase CucumberTest.java
+ - Ver resultado de los pasos definidos cómo escenarios 
+ - Ejecutar HttpServerTest.java con Junit para validar respuesta del servicio (httpServer)
+    
 
 # Decisiones de realización
 
