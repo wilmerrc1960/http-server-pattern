@@ -79,7 +79,7 @@ Se implementó un proyecto de pruebas en Java con Cucumber para cubrir los compo
 | Lenguaje de programación     | Python      |
 | Arquitectura  | Cliente - Servidor (Stateless) |
 
-
+# Funcionamiento de un HTTP Server
 Cuando se realiza una petición por HTTP (http request) por un navegador o cualquier software capaz de hacer peticiones http:
 1. Se necesita establecer una conexión TCP (por medio de sockets entre el cliente y el server)
   - create socket
