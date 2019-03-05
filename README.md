@@ -15,6 +15,7 @@ Al ser python un lenguaje intituitivo la curva de aprendizaje no fue tan complej
 Las unicas librerias usadas para la implementación fueron socket, mimetypes, logging
 
 ![alt text](https://qanalysisblog.files.wordpress.com/2018/06/bdd_pic1.png?w=775)
+
 // Primera Revisión
 * Se implemento inicialmente un servidor HTTP que atendiera conexiones full duplex con sockets 
 
@@ -26,6 +27,7 @@ Las unicas librerias usadas para la implementación fueron socket, mimetypes, lo
 
 
 # Diagrama de Clases
+
 ![alt text](https://github.com/edtiko/http-server-pattern/blob/master/class-diagram.png)
 
 
