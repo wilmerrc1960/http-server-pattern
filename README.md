@@ -5,14 +5,49 @@
 Construir servidor HTTP desde cero teniendo en cuenta los lineamientos del protocolo HTTP /1.1 especificado en el RFC, y entender el comportamiento interno de un servidor HTTP.
 
 # Requisitos
-
+* Implementar la atención de peticiones http. 
+* Realizar traza de todas las peticiones que se le realicen aL servidor escribiendo cada petición recibida en un archivo de log.
+* Implementar proyecto de pruebas, donde estén definidos los comportamientos esperados.
 
 # Implementación:
-con la implementación de sockets y teniendo en cuenta las estructuras definidas para el cuerpo del mensaje enviado por el cliente (user agent) y la respuesta del server (origin server).
+La metodología usada para el desarrollo del servidor HTTP es BDD (Behavior Driven Development), donde primero se establecieron los comportamientos esperados de la aplicación, para posteriormente desarrollar cada escenario esperado.
+
+# Herramientas
+* El lenguaje usado para la implementación fue Python 3 y para el proyecto de pruebas Java.
+* Visual Studio Code para realizar la implementación en Python.
+* Eclipse para realizar el proyecto de pruebas usando Cucumber como dependencia.
+* Git para el control de versiones de los dos proyectos.
+
 
 # Pruebas:
+Se implementó un proyecto de pruebas en Java para cubrir los comportamientos esperados del servidor HTTP desarrollado, los escenarios planteados son:
+  
+  Escenario Metodo GET con recurso esperado
+* Dado el nombre de un recurso index.html 
+* Cuando el userAgent realice una petición GET al servidor http 
+* Entonces el servidor debe responder código 200
+* y con el body de index.html
+
+  Escenario Metodo GET con recurso desconocido
+* Dado el nombre de un recurso desconocido 
+* Cuando el userAgent realice una petición GET al servidor http 
+* Entonces el servidor debe responder código 404
+* y con el body de respuesta
+
+  Escenario Metodo POST Not Implemented
+* Dado el nombre de un recurso index.html 
+* Cuando el userAgent realice una petición POST al servidor http 
+* Entonces el servidor debe responder código 501
+* y con el body de index.html
 
 # Instrucciones de uso:
+
+1. Instalar Python 3: https://www.python.org/downloads/
+2. Instalar JDK Java: https://www.oracle.com/technetwork/es/java/javase/downloads/index.html
+3. Instalar IDE Visual Studio Code
+4. Instalar Eclipse o Intellij
+5. Instalar Git
+6. Clonar repositorio: 
 
 # Decisiones de realización
 
