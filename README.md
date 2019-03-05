@@ -24,25 +24,25 @@ La metodología usada para el desarrollo del servidor HTTP es BDD (Behavior Driv
 
 
 # Pruebas:
-Se implementó un proyecto de pruebas en Java para cubrir los comportamientos esperados del servidor HTTP desarrollado, los escenarios planteados son:
+Se implementó un proyecto de pruebas en Java con Cucumber para cubrir los comportamientos esperados del servidor HTTP desarrollado, los escenarios planteados son:
   
-  Escenario Metodo GET con recurso esperado
+//Escenario 1
 * Dado el nombre de un recurso index.html 
 * Cuando el userAgent realice una petición GET al servidor http 
 * Entonces el servidor debe responder código 200
 * y con el body de index.html
 
-  Escenario Metodo GET con recurso desconocido
+//Escenario 2
 * Dado el nombre de un recurso desconocido 
 * Cuando el userAgent realice una petición GET al servidor http 
 * Entonces el servidor debe responder código 404
-* y con el body de respuesta
+* y con el body de error
 
-  Escenario Metodo POST Not Implemented
+//Escenario 3
 * Dado el nombre de un recurso index.html 
 * Cuando el userAgent realice una petición POST al servidor http 
 * Entonces el servidor debe responder código 501
-* y con el body de index.html
+* y con el body de error
 
 # Instrucciones de uso:
 
