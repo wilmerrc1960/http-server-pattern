@@ -11,6 +11,19 @@ Construir servidor HTTP desde cero teniendo en cuenta los lineamientos del proto
 
 # Implementación:
 La metodología usada para el desarrollo del servidor HTTP es BDD (Behavior Driven Development), donde primero se establecieron los comportamientos esperados de la aplicación, para posteriormente desarrollar cada escenario esperado.
+Al ser python un lenguaje intituitivo la curva de aprendizaje no fue tan complejo, sin embargo se presentaron errores que requirieron investigación para solucionarlos.
+Las unicas librerias usadas para la implementación fueron socket, mimetypes, logging
+
+![alt text](https://qanalysisblog.files.wordpress.com/2018/06/bdd_pic1.png?w=775)
+// Primera Revisión
+* Se implemento inicialmente un servidor HTTP que atendiera conexiones full duplex con sockets 
+
+// Segunda Revisión
+* Posterior se desarrolla el parseador de los datos recibidos en el socket
+* Posterior se implementan 2 metodos HTTP (GET, OPTIONS)
+* Manejo de errores cuando llegue un metodo no implementado (POST, PUT..)
+* Manejo de la traza de cada petición realizada en un archivo llamado http_request.log que se encuentra dentro del proyecto
+
 
 # Diagrama de Clases
 ![alt text](https://github.com/edtiko/http-server-pattern/blob/master/class-diagram.png)
